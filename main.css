@@ -1,10 +1,10 @@
 #product-overview {
   background: linear-gradient(to top, rgba(80, 68, 18, 0.6), transparent),
-    url("freedom.jpg") left 10% bottom 80% / cover border-box;
+    url("freedom.jpg") center / cover content-box;
   background-repeat: no-repeat;
-  width: 100vw;
+  width: 100%;
   height: 33vh;
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   position: relative;
 }
 
@@ -17,24 +17,12 @@
   left: 3%;
 }
 
-@media (min-width: 40rem) {
-  #product-overview h1 {
-    font-size: 2rem;
-  }
-  #product-overview {
-    height: 40vh;
-    background-position: 50% 25%;
-  }
-}
+/* .toggle-button {
+  display: none;
+} */
 
 .section-title {
   color: #2ddf5c;
-  text-align: center;
-}
-
-.plan__list {
-  width: 80%;
-  margin: auto;
   text-align: center;
 }
 
@@ -42,16 +30,15 @@
   background: #d5ffdc;
   text-align: center;
   padding: 1rem;
-  margin: 0.5rem;
-  display: inline-block;
-  width: 30%;
-  vertical-align: middle;
+  display: block;
+  width: 100%;
+  margin: 0.5rem 0;
 }
 
 .plan--highlighted {
   background: #19b84c;
   color: white;
-  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5); */
 }
 
 .plan__annotation {
@@ -107,9 +94,9 @@
 }
 
 .key-feature {
-  display: inline-block;
-  width: 30%;
-  vertical-align: top;
+  display: block;
+  width: 100%;
+  padding: 1rem 2rem;
 }
 
 .key-feature__image {
@@ -126,5 +113,48 @@
   text-align: center;
   font-weight: bold;
   color: white;
-  font-size: 1.1rem;
+  font-size: 0.8rem;
+}
+@media (min-width: 40rem) {
+  #product-overview h1 {
+    font-size: 2rem;
+  }
+
+  #product-overview {
+    height: 50vh;
+    background-position: 50% 25%;
+  }
+}
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+  }
+  .plan {
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+    min-width: 200px;
+    max-width: 310px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+  }
+
+  .plan__list {
+    width: 100%;
+    text-align: center;
+  }
+
+  .key-feature {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    min-width: 200px;
+    max-width: 310px;
+  }
+
+  .key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1rem;
+  }
 }

@@ -118,13 +118,6 @@ body {
   width: 100%;
 }
 
-.main-nav {
-  display: inline-block;
-  text-align: right;
-  width: calc(100% - 144px);
-  vertical-align: middle;
-}
-
 .main-nav__items,
 .mobile-nav__items {
   margin: 0;
@@ -248,4 +241,20 @@ body {
 
 .open {
   display: block !important;
+}
+
+.main-nav {
+  display: none;
+}
+
+@media (min-width: 40rem) {
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 50px);
+    vertical-align: middle;
+  }
+  .toggle-button {
+    display: none;
+  }
 }
