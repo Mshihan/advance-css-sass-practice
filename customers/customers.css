@@ -1,15 +1,10 @@
 .testimonial {
   font-size: 1.1rem;
-  margin: 3rem auto;
 }
 
 .testimonial__list {
   width: 80%;
   margin: auto;
-}
-
-.testimonial:first-of-type {
-  margin-top: 6rem;
 }
 
 .testimonial__image-container {
