@@ -1,0 +1,86 @@
+main {
+  margin-top: 6rem;
+  min-height: calc(100vh - 12rem - 55px) !important;
+}
+.signup-page {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.signup-title {
+  text-align: center;
+  padding: 1rem;
+  color: #cc4545;
+}
+
+.signup-page label,
+.signup-page input:not(input[type="checkbox"]),
+.signup-page select {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.signup-page input:not(input[type="checkbox"]):active,
+.signup-page input:not(input[type="checkbox"]):focus,
+.signup-page select:active,
+.signup-page select:focus {
+  border: #2ddf5c 2px solid;
+  background: #9fe2b1;
+}
+
+.signup-page input:invalid {
+  border: #cc4545 2px solid !important;
+  background: #ffd0d0 !important;
+}
+
+.signup-page label {
+  font-weight: 600;
+}
+
+.signup-page input[id*="terms"],
+.signup-page input[id*="terms"] + label {
+  display: inline-block;
+  width: auto;
+}
+
+.signup-page input[type="checkbox"] {
+  height: 1rem;
+  width: 1rem;
+  background: white;
+  border: #ccc 2px solid;
+  vertical-align: bottom;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.signup-page input[type="checkbox"]:checked {
+  background: #8ceca6;
+  border: #11f34d 2px solid;
+}
+
+.signup-page button {
+  display: block;
+  margin-top: 1rem;
+}
+.signup-page button[disabled] {
+  cursor: not-allowed;
+  background: #ccc;
+  border: rgb(163, 163, 163) 2px solid;
+  color: rgb(163, 163, 163);
+}
+
+@media (min-width: 40rem) {
+  .signup-page {
+    max-width: 30rem;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .signup-page label {
+    font-weight: normal;
+  }
+}
